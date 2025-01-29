@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Wow, Books! </title>
+</head>
+<body>
+    <header class="header">
+        <div id="brand">
+            <img src="img/svg-book.svg" alt="Logo of a book">
+            <h1>Wow, Books!</h1>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li class="nav-library"><a href="index.html">Library</a></li>
+                <li class="nav-search" style="background-color: rgb(18, 18, 18);"><a href="search.html">Search</a></li>
+                <li class="nav-cities"><a href="cities.html">Cities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main class="main">
+        <form id="search-form">
+            <input type="text" placeholder="Search" id="search-bar">
+            <button type="button" id="search-button"><img src="img/search.png" alt="Search icon" id="search-icon"></button>
+            <p id="loading-text" style="display: none;">Loading... (Can take up to 20s)</p>
+        </form>
+
+        <div class="book-display">
+
+        </div>
+        <div id="chart-div">
+            <h3 id="chart-title" style="visibility: hidden;">Chart</h3>
+            <canvas id="chart">
+
+            </canvas>
+        </div>
+    </main>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
